@@ -3,13 +3,12 @@
     
 Oxygen Media conversion plugin
 Copyright (c) 1998-2016 Syncro Soft SRL, Romania.  All rights reserved.
-Licensed under the terms stated in the license file README.txt 
+Licensed under the terms stated in the license file LICENSE 
 available in the base directory of this plugin.
 
 -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    version="2.0"
-    xmlns:xslthl="http://xslthl.sf.net" exclude-result-prefixes="xslthl">
+    version="2.0">
 
   <xsl:template match="*[contains(@class, ' topic/object ')][@outputclass = 'video']" priority="10">
     <video controls="controls">
