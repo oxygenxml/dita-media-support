@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="Custom media processing">
+    <target name="copyMediaAudioAndVideo">
+        <copy todir="${output.dir}/">
+            <fileset dir="${user.input.dir}">
+                <include name="**/*.mp3"/>
+                <include name="**/*.mp4"/>
+            </fileset>
+        </copy>
+    </target>
+</project>
