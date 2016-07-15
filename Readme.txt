@@ -26,3 +26,6 @@ Examples:
       
 Instead of specifying the video reference using the @data attribute you can also specify it using a parameter like:
   <param name="src" value="clips/Clip_480_5sec_6mbps_h264.mp4"/>
+All other parameter elements specified on the DITA <object> are set as attributes on the generated HTML 5 element. 
+  
+When producing the PDF output, the DITA <object> elements which have @outputclass audio/video or iframe are output as links.
