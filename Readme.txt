@@ -18,11 +18,11 @@ Examples:
       
 3. The DITA structure:
  
-      <object outputclass="iframe" data="https://www.youtube.com/embed/LJ6lCPXtiNY"/>
+      <object outputclass="iframe" data="https://www.youtube.com/embed/m_vv2s5Trn4"/>
       
       is converted to:
       
-      <iframe controls="controls" src="https://www.youtube.com/embed/LJ6lCPXtiNY"></iframe>
+      <iframe controls="controls" src="https://www.youtube.com/embed/m_vv2s5Trn4"></iframe>
       
 Instead of specifying the video reference using the @data attribute you can also specify it using a parameter like:
   <param name="src" value="clips/Clip_480_5sec_6mbps_h264.mp4"/>
