@@ -16,7 +16,7 @@ available in the base directory of this plugin.
         <xsl:attribute name="width" select="@width"/>
       </xsl:if>
       <xsl:if test="@height">
-        <xsl:attribute name="width" select="@width"/>
+        <xsl:attribute name="height" select="@height"/>
       </xsl:if>
       <xsl:apply-templates select="param[not(@name='src')]"/>
       <xsl:if test="param[@name='src'] or @data">
@@ -65,7 +65,7 @@ available in the base directory of this plugin.
         <xsl:attribute name="width" select="@width"/>
       </xsl:if>
       <xsl:if test="@height">
-        <xsl:attribute name="width" select="@width"/>
+        <xsl:attribute name="height" select="@height"/>
       </xsl:if>
       <xsl:apply-templates select="param"/>
       <xsl:if test="@data">
