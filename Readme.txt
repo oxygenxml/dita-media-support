@@ -39,7 +39,6 @@ For example:
              <source value="Sleep Away.mp3" />
             </audio>
 
-        
         is converted to:
         
         <audio controls="controls"><source src="Sleep Away.mp3"></source></audio>
@@ -50,7 +49,6 @@ For example:
             <source value="Clip_480_5sec_6mbps_h264.mp4" />
            </video>
 
-      
       is converted to:
       
       <video controls="controls"><source src="Clip_480_5sec_6mbps_h264.mp4"></source></video>
@@ -62,7 +60,6 @@ For example:
            <source value="https://www.youtube.com/embed/m_vv2s5Trn4"/>
           </video>
 
-      
       is converted to:
       
       <iframe controls="controls" src="https://www.youtube.com/embed/m_vv2s5Trn4"></iframe>
