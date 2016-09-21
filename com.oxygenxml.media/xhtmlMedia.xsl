@@ -58,7 +58,11 @@ available in the base directory of this plugin.
   
   <!-- Create the XHTML audio element -->
   <xsl:template match="*[contains(@class, ' topic/object ')][@outputclass = 'audio' or local-name() = 'audio']" priority="10">
-    <audio controls="controls">
+    <audio>
+      <!-- The <audio> element has a specific controls element which defines if controls should be present or not. -->
+      <xsl:if test="not(local-name() = 'audio') or controls">
+        <xsl:attribute name="controls">controls</xsl:attribute>
+      </xsl:if>
       <xsl:apply-templates select="*[contains(@class,' topic/param ')][not(@name='src')]"/>
       <xsl:call-template name="copySource"/>
     </audio>
