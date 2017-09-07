@@ -63,3 +63,5 @@ For example:
       is converted to:
       
       <iframe controls="controls" src="https://www.youtube.com/embed/m_vv2s5Trn4"></iframe>
+
+If for a certain HTML type output (for example CHM) you want to add a plain link to the video instead of embedding it there is a parameter called "com.oxygenxml.xhtml.linkToMediaResources" which can be set to "true".
