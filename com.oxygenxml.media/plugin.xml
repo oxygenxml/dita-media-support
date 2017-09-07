@@ -7,4 +7,5 @@
   <feature extension="dita.xsl.xslfo" value="pdfMedia.xsl" type="file"/>
   <feature extension="depend.preprocess.copy-files.pre" value="copyMediaAudioAndVideo" type="text"/>
   <feature extension="dita.conductor.target.relative" file="conductor.xml"/>
+  <feature extension="dita.conductor.xhtml.param" value="insertParameters.xml" type="file"/>
 </plugin>
