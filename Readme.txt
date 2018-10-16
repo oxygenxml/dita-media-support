@@ -65,3 +65,9 @@ For example:
       <iframe controls="controls" src="https://www.youtube.com/embed/m_vv2s5Trn4"></iframe>
 
 If for a certain HTML type output (for example CHM) you want to add a plain link to the video instead of embedding it there is a parameter called "com.oxygenxml.xhtml.linkToMediaResources" which can be set to "true".
+
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
+This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/dita-media-support/blob/master/LICENSE)
