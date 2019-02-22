@@ -11,13 +11,13 @@
     <xsl:template match="*[contains(@class,' topic/object ')][@outputclass = 'iframe' or @outputclass = 'audio' 
         or @outputclass = 'video' or local-name() = 'video' or local-name() = 'audio']">
         <xsl:variable name="target">
-            <xsl:if test="*[contains(@class,' topic/param ')][@name='src' or local-name() = 'source'] or @data">
+            <xsl:if test="*[contains(@class,' topic/param ')][@name='src' or local-name() = 'source' or local-name() = 'media-source'] or @data">
                 <xsl:choose>
                     <xsl:when test="@data">
                         <xsl:value-of select="@data"/>
                     </xsl:when>
                     <xsl:otherwise>
-                        <xsl:value-of select="*[contains(@class,' topic/param ')][@name='src' or local-name() = 'source']/@value"/>
+                        <xsl:value-of select="*[contains(@class,' topic/param ')][@name='src' or local-name() = 'source' or local-name() = 'media-source']/@value"/>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:if>

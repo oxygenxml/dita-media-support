@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." name="Custom media processing">
     <target name="copyMediaAudioAndVideo">
-        <basename property="output.dir.file.name" file="${output.dir}/"/>
+        <!-- WH-1547 Starting with DITA OT 2.x these resources seem to be copied to the output by the processor. -->
+<!--        <basename property="output.dir.file.name" file="${output.dir}/"/>
         <basename property="temp.dir.file.name" file="${dita.temp.dir}/"/>
         <dirname file="${args.input}" property="inputFolderProperty" />
         <script language="javascript">
@@ -21,11 +22,11 @@
                 <include name="**/*.mp3"/>
                 <include name="**/*.mp4"/>
                 <include name="**/*.avi"/>
-                <!-- EXM-37863 Avoid copying resources from output and temp folders when 
-                they are in the DITA Map folder...-->
+                <!-\- EXM-37863 Avoid copying resources from output and temp folders when 
+                they are in the DITA Map folder...-\->
                 <exclude name="**/${output.dir.file.name}/**"/>
                 <exclude name="**/${temp.dir.file.name}/**"/>
             </fileset>
-        </copy>
+        </copy>-->
     </target>
 </project>
