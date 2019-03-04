@@ -41,16 +41,16 @@ available in the base directory of this plugin.
             <xsl:if test="not(local-name() = 'video') or controls">
               <xsl:attribute name="controls">controls</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-controls[value='true']">
+            <xsl:if test="media-controls[@value='true']">
               <xsl:attribute name="controls">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-autoplay[value='true']">
+            <xsl:if test="media-autoplay[@value='true']">
               <xsl:attribute name="autoplay">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-loop[value='true']">
+            <xsl:if test="media-loop[@value='true']">
               <xsl:attribute name="loop">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-muted[value='true']">
+            <xsl:if test="media-muted[@value='true']">
               <xsl:attribute name="muted">true</xsl:attribute>
             </xsl:if>
             <xsl:if test="@width">
@@ -166,16 +166,16 @@ available in the base directory of this plugin.
             <xsl:if test="not(local-name() = 'video') or controls">
               <xsl:attribute name="controls">controls</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-controls[value='true']">
+            <xsl:if test="media-controls[@value='true']">
               <xsl:attribute name="controls">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-autoplay[value='true']">
+            <xsl:if test="media-autoplay[@value='true']">
               <xsl:attribute name="autoplay">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-loop[value='true']">
+            <xsl:if test="media-loop[@value='true']">
               <xsl:attribute name="loop">true</xsl:attribute>
             </xsl:if>
-            <xsl:if test="media-muted[value='true']">
+            <xsl:if test="media-muted[@value='true']">
               <xsl:attribute name="muted">true</xsl:attribute>
             </xsl:if>
             <xsl:if test="@width">
