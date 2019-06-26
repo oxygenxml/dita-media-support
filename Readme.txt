@@ -2,7 +2,7 @@ Plugin which allows referring to videos, embedded videos and audio resources in 
 
 Media plugin which converts the DITA object element to various HTML 5 structures like <video>, <audio> or <iframe>.
 
-The plugin works with both DITA OT 1.8 and 2.x.
+The plugin works with DITA OT 1.8, 2.x and 3.x.
 Examples:
 
  1. The DITA structure:
