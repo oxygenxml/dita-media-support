@@ -1,4 +1,4 @@
-Plugin which allows referring to videos, embedded videos and audio resources in the DITA content.
+Plugin which allows referring to videos, embedded videos and audio resources in the DITA content. Using the "iframe" outputclass you can also embed other resources like PDF in DITA topics.
 
 Media plugin which converts the DITA object element to various HTML 5 structures like <video>, <audio> or <iframe>.
 
